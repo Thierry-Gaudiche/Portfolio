@@ -1,0 +1,214 @@
+
+.cursor {
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    animation: cursorAnim .5s infinite alternate;
+    pointer-events: none;
+}
+
+.cursor::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border: 8px solid gray;
+    border-radius: 50%;
+    opacity: .5;
+    top: -8px;
+    left: -8px;
+    animation: cursorAnim2 .5s infinite alternate;
+}
+
+@keyframes cursorAnim {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.7);
+    }
+}
+
+@keyframes cursorAnim2 {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.4);
+    }
+}
+
+@keyframes cursorAnim3 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(3);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+.expand {
+    animation: cursorAnim3 .5s forwards;
+    border: 1px solid red;
+}
+
+a {  
+     font-family: Poppins, sans-serif; /* Police */
+     text-decoration: none;  
+     text-transform: uppercase; /* Majuscule */
+     position: relative; 
+     -webkit-transition: all 0.4s ease; 
+     transition: all 0.4s ease;
+     padding: 15px; 
+}
+
+a:after {
+     content: ""; 
+     position: absolute;
+     height: 8px; /* hauteur soulignage */
+     background-color: black; /* couleur soulignage */
+     width: 0; 
+     left: 50%;
+     bottom: 0;
+     -webkit-transform: translateX(-50%); 
+     -ms-transform: translateX(-50%); 
+     transform: translateX(-50%); 
+     -webkit-transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all; 
+     transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all; 
+} 
+
+a:hover {
+     color: black;
+}
+
+a:hover:after {
+     width: 100%;
+}
+
+a {
+     text-decoration: none;
+     color: black;
+}
+
+html, body {
+     margin: 0;
+     padding: 0;
+}
+
+body {
+     width: 100%;
+     height: 100vh;
+     background-size: cover;
+}
+
+h1 {
+     font-family: 'Poppins', sans-serif;
+     color: black; 
+     font-size: 42px;
+     text-transform: uppercase;
+     padding: 0.4em 1em;
+     position: absolute;
+     top: 40%;
+     left: 46%;
+     transform: translate(-50%, -50%);
+}
+
+.rev-block {
+     position: absolute;
+}
+
+.rev-block span {
+     opacity: 0;
+     animation: appear-text 0.0001s linear forwards;
+     animation-delay: 1.4s;
+}
+
+.rev-block:after {
+     content: '';
+     top: 0;
+     left: 0;
+     position: absolute;
+     width: 0%;
+     height: 100%;  /* hauteur du block revelateur */
+     background: red;  /* fond du block revelateur */
+     animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+     animation-delay: 1s; /* temps de disparition block revelateur */
+}
+
+@keyframes rev-block {
+
+     0% {
+          left: 0;
+          width: 0%;
+     }
+     50% {
+          left: 0;
+          width: 100%;
+     }
+     100% {
+          left: 100%;
+          width: 0%;
+     }
+
+}
+
+@keyframes appear-text {
+
+     0% {
+          opacity: 0;
+     }
+     100% {
+          opacity: 1;
+     }
+
+}
+
+#onemore {
+     top: 52%;
+     left: 58%;
+}
+
+#onemore span {
+     animation-delay: 2s;
+}
+
+#onemore.rev-block:after {
+     background: black;
+     animation-delay: 1.4s;
+}
+
+@media only screen and (max-width: 900px) {
+     h1 {
+          font-size: 20px;
+          padding: 0.4em;
+     }
+}
+
+#about {
+     top: 63%;
+     left: 45%;
+}
+
+#about span {
+     animation-delay: 2s;
+}
+
+#about.rev-block:after {
+     background: grey;
+     animation-delay: 1.4s;
+}
+
+@media only screen and (max-width: 900px) {
+     h1 {
+          font-size: 20px;
+          padding: 0.4em;
+     }
+}
