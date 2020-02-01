@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+html {
+	padding-top: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #F5F5F5;
+}
+header > a{
+	position: fixed;
+	margin: 1em;
+	top: 0;
+	left: 0;
+	font-family: poppins;
+	font-size: 1em;
+	z-index: 100;
+	color: white;
+	text-decoration: none;
+}
+
+/* section titre--- ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.scroll {
+  padding: 1px;
+  height: 100vh;
+  background-color: black;
+  color: #F5F5F5; 
+  font-family: poppins
+}
+
+#down {
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	text-align: center;
+	display: flex;
+	flex-direction: column;	
+	justify-content: space-evenly;
+}
+
+/* section projet 1 2 ----------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (min-width: 601px) {
+  	h1 {
+		font-size: 10em;
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 600px) {
+  	h1 {
+		font-size: 50px;
+		margin: 0;
+	}
+}
+
+@media screen and (min-width: 601px) {
+	h2{
+		font-size: 5em;
+		margin-right: 2em;
+		margin-left: 2em;
+		margin-top: 0;
+		margin-top: 0;
+}
+}
+
+@media screen and (max-width: 600px) {
+	h2{
+		font-size: 20px;
+		margin-right: 2em;
+		margin-left: 2em;
+		margin-top: 0;
+		margin-top: 0;
+}
+}
+
+
+@media screen and (min-width: 601px) {
+  	h3{
+		font-size: 3em;
+		vertical-align: bottom;
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 600px) {
+  	h3{
+		font-size: 10px;
+		vertical-align: bottom;
+		margin: 0;
+	}
+}
+
+#projets_reveal{
+	display: flex;
+	width:100%;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	font-family: poppins;
+}
+
+@media screen and (min-width: 601px) {
+  	#projets_reveal > div{
+		width: 80vw;
+		height: 80vh;
+		position: absolute;
+	}
+}
+
+@media screen and (max-width: 600px) {
+  	#projets_reveal > div{
+		width: 80vw;
+		height: 30vh;
+		position: absolute;
+	}
+}
+
+#projets_reveal img{
+	width: 100%;
+	height: 100%;
+	box-shadow: 8px 8px 12px #aaa;
+	border-radius: 30px;
+}
+
+#projet_1_2 {
+	z-index: 3;
+}
+
+#projet_1 {
+	z-index: 2;
+}
+
+#projet_1:hover {
+	background-color: black;
+	border-radius: 30px;
+}
+
+#projet_1  img:hover {
+	opacity: 0.5;
+	transition: 0.2s;
+}
+
+#projTxt_1{
+	z-index: 0;
+}
+
+#projet_2 {
+	z-index: 1;
+}
+
+#projet_2:hover {
+	background-color: black;
+	border-radius: 30px;
+}
+
+#projet_2  img:hover {
+
+}
+
+#projTxt_1  {
+	opacity: 0;
+	display: flex;		
+	flex-direction: column;	
+	justify-content: center;
+}
+
+#projTxt_1 h2 {
+	margin: 0;
+}
+
+@media screen and (min-width: 601px) {
+	#projTxt_1 h2 {
+		font-size: 100px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#projTxt_1 h2 {
+		font-size: 15px;
+	}
+}
+
+@media screen and (min-width: 601px) {
+	#projTxt_1 h3 {
+		font-size: 50px;
+		color: grey;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#projTxt_1 h3 {
+		font-size: 10px;
+		color: grey;
+	}
+}
+
+@media screen and (min-width: 601px) {
+	#projTxt_1 p {
+		font-size: 25px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#projTxt_1 p {
+		font-size: 5px;
+	}
+}
+
+#projTxt_2  {
+	opacity: 0;
+	display: flex;		
+	flex-direction: column;	
+	justify-content: center;	
+}
+
+#projTxt_2 h2 {
+	margin: 0;
+}
+
+@media screen and (min-width: 601px) {
+	#projTxt_2 h2 {
+		font-size: 100px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#projTxt_2 h2 {
+		font-size: 15px;
+	}
+}
+
+@media screen and (min-width: 601px) {
+	#projTxt_2 h3 {
+		font-size: 50px;
+		color: grey;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#projTxt_2 h3 {
+		font-size: 10px;
+		color: grey;
+	}
+}
+
+@media screen and (min-width: 601px) {
+	#projTxt_2 p {
+		font-size: 25px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#projTxt_2 p {
+		font-size: 5px;
+	}
+}
+
+/*  section projet 3 4  ------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+#projets_3_4 {
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+}
+
+#projets_3_4 > div:nth-child(even) {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.div_3_4{
+	width: 100%;
+	height: 50vh;
+}
+
+#imgproj_3, #imgproj_4 {
+	z-index: 5;
+}
+
+#projText_3, #projText_4 {
+	z-index: 4;
+}
+
+#projets_3{
+	width: 50%;
+	height: 50vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: poppins;
+	color: white;
+}
+
+#projets_3 > div {
+	width: 40vw;
+	height: 40vh;
+	position: absolute;
+}
+
+#projets_3 img {
+	width: 100%;
+	height: 100%;
+	border-radius: 30px;
+}
+
+#projets_4{
+	width: 50%;
+	height: 50vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: poppins;
+	color: white;
+}
+
+#projets_4 > div {
+	width: 40vw;
+	height: 40vh;
+	position: absolute;
+}
+
+#projets_4 img {
+	width: 100%;
+	height: 100%;
+	border-radius: 30px;
+}
+
+#projText_3{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+
+}
+
+#projText_4{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+
+}
+
+#projText_3 h2, #projText_4 h2 {
+	font-size: 50px;
+	margin: 0;
+}
+
+#projText_3 h3, #projText_4 h3 {
+	font-size: 25px;
+	margin: 0;
+	color: grey;
+}
+
+#projText_3 p, #projText_4 p {
+	font-size: 12px;
+	margin : 12px 0px 12px;
+}
+
+#projets_3 > #imgproj_3:hover {
+	opacity: 0.5;
+	transition: 0.2s;
+}
+
+#projets_4 > #imgproj_4:hover {
+	opacity: 0.5;
+	transition: 0.2s;
+}
+
+/*  section projet 5 6  ------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+#projets_5_6 {
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+}
+
+#projets_5_6 > div:nth-child(even) {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.div_5_6{
+	width: 100%;
+	height: 50vh;
+}
+
+#imgproj_5, #imgproj_6 {
+	z-index: 5;
+}
+
+#projText_5, #projText_6 {
+	z-index: 4;
+}
+
+#projets_5{
+	width: 50%;
+	height: 50vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: poppins;
+	color: white;
+}
+
+#projets_5 > div {
+	width: 40vw;
+	height: 40vh;
+	position: absolute;
+}
+
+#projets_5 img {
+	width: 100%;
+	height: 100%;
+	border-radius: 30px;
+}
+
+#projets_6{
+	width: 50%;
+	height: 50vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: poppins;
+	color: white;
+}
+
+#projets_6 > div {
+	width: 40vw;
+	height: 40vh;
+	position: absolute;
+}
+
+#projets_6 img {
+	width: 100%;
+	height: 100%;
+	border-radius: 30px;
+}
+
+
+#projText_5{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+
+}
+
+#projText_6{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+
+}
+
+#projText_5 h2, #projText_6 h2 {
+	font-size: 50px;
+	margin: 0;
+}
+
+#projText_5 h3, #projText_6 h3 {
+	font-size: 25px;
+	margin: 0;
+	color: grey;
+}
+
+#projText_5 p, #projText_6 p {
+	font-size: 12px;
+	margin : 12px 0px 12px;
+}
+
+#projets_5 > #imgproj_5:hover {
+	opacity: 0.5;
+	transition: 0.2s;
+}
+
+#projets_6 > #imgproj_6:hover {
+	opacity: 0.5;
+	transition: 0.2s;
+}

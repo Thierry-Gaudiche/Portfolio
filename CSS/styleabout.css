@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body, html {
+    font-family: poppins;
+    color: white;
+    background-color: black;
+}
+
+header {
+    height: 5vw;
+}
+
+footer{
+    height: 5vw;
+}
+
+header > a{
+    position: fixed;
+    margin: 1em;
+    top: 0;
+    left: 0;
+    font-family: poppins;
+    font-size: 1em;
+    z-index: 100;
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 45px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 30px;
+    margin: 0;
+}
+
+p{
+    margin: 0;
+}
+
+#about{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#title_about{
+    width: 20vw;
+}
+
+#desc_about{
+    width: 60vw;
+    word-wrap: break-word;
+}
+
+#CV{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#parts {
+    width: 80vw;
+}
+
+.sk_xp_sc{
+    margin-top: 10vh;
+    width: 100%;
+    display: flex;
+}
+
+.title{
+    width: 30vw;
+    margin-left: 10vw;
+}
+
+.desc{
+    width: 50vw;
+    margin-right: 10vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.dt_pl{
+    display: flex;
+    flex-direction: column;    
+}
+
+.dt_na{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.place{
+    color: gray;
+}
+
+#pi_co{
+    display: flex;
+    flex-direction: column;
+}
+
+#co{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+#co a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
